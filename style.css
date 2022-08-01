@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #e8e8e8;
+}
+
+.container {
+  width: 700px;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+ perspective: 1000px;
+}
+
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  width: 50%;
+  flex-direction: column;
+  border-radius: 7px;
+  padding: 30px;
+  text-align: center;
+  background-color: #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5,
+  -6px -6px 12px #ffffff;
+  transform-style: preserve-3d;
+}
+
+.card-img{
+  position: relative;
+  
+}
+
+.card img {
+  width: 170px;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin: auto;
+  transition: all ease .8s;
+}
+
+
+
+.card-circle {
+height:160px;
+border-radius: 50%;
+background:linear-gradient(to bottom right,#7352eb, #4a0885);
+  width: 160px;
+}
+
+.card-title{
+  margin-bottom: 15px;
+    transition: all ease .9s;
+margin-top: 10px
+}
+
+.card-info p{
+  font-size: 15px;
+  line-height: 22px;
+    transition: all ease .6s;
+
+}
+
+.cta-btn{
+  display: block;
+  text-decoration:none;
+  background:#7352eb;
+  color:white;
+  border-radius: 7px;
+  margin:30px;
+  padding: 10px 20px;
+font-size: 18px;
+  transition: all ease 1s;
+
+}
